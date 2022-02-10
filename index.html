@@ -4,16 +4,12 @@
 <style>
     #tomorrow {
         filter: blur(4px);
-        transition: 5s filter linear;
         cursor: pointer;
-    }
-    #tomorrow:hover {
-        filter: blur(0);
     }
 </style>    
 <div id="root">
     <p><strong>Today:</strong> <span id="today"></span><br />
-    <strong>Tomorrow:</strong> <span id="tomorrow"></span></p>
+    <strong>Tomorrow:</strong> <span id="tomorrow" onclick="this.style.webkitFilter='blur(0)'"></span></p>
 </div>
 <script>
 function answer(t) {
